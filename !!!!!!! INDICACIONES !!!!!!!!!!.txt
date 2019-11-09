@@ -11,7 +11,8 @@
 	usuario: romel@gmail.com
 	clave: hola
 
-3.- La base de datos del proyecto ya se encuentra en linea en Google Firebase	
+3.- La base de datos del proyecto ya se encuentra en linea en Google Firebase, se adjunta
+ una copia en un archivo con formato json	
 
 4.- Arrancar el proyecto de la siguiente manera
 	a.- desde la consola de comandos ejecutar ng serve
@@ -29,7 +30,8 @@
 	usuario: romel@gmail.com
 	clave: hola	
 	
-3.- La base de datos del proyecto ya se encuentra en linea en Google Firebase
+3.- La base de datos del proyecto ya se encuentra en linea en Google Firebase, se adjunta
+ una copia en un archivo con formato json
 
 4.- Arrancar el proyecto de la siguiente manera
 	a.- desde la consola de comandos ejecutar npm start
