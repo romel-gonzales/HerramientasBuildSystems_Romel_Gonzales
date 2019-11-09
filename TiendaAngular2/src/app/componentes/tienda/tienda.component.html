@@ -1,0 +1,53 @@
+<div class="contenedor-principal">
+
+<div class="container">
+
+    <app-barra></app-barra>  
+
+	<div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <div>
+            <h4>Catálogo de productos</h4>
+          </div>
+          <form [formGroup]="formulario" (onSubmit)="preventDefault(e)">
+            <div class="input-group" style="padding-bottom:5px; width: 50%; float: right">
+                <h4><span for="search" class="badge">¿Que deseas buscar?</span></h4>
+                <input formControlName="descripcion" type="text" class="form-control" placeholder="Buscar producto" [(ngModel)]="query">
+            </div> 
+          </form>
+        </div>        
+   </div>
+
+   
+  <div class="row catalogo">
+		<div class="col-md-3 col-sm-6" *ngFor="let item of listaProductos | filterSearch: query" >
+			<div class=" card">
+
+			  <div class="product-image">
+          <img class="pic-1" src="{{item.imagen}}" class="card-img-top">
+        </div>
+        
+        <div class=" card-body" >
+
+            <div class="social">
+                <span class=""> {{ item.nombre }} </span>
+                <p class=""> Precio :  {{ item.precio | currency:'USD':true:'1.2-2' }} </p>
+                <p class=""> Unidades disponibles. {{ item.disponible }} </p>
+              </div> 
+
+            <div>
+              <div>
+                <a [routerLink]="['/tienda/detalle', item.id]" class="btn btn-secondary">Ver Detalles</a>  
+              </div>  
+              <button class="btn btn-warning" [disabled]="(item.disponible <= 0)" (click)="agregarProducto(item.id, agregar.value)">Añadir</button>
+              <div class="product-quantity">
+                <input type="number" [value]="1" [disabled]="(item.disponible <= 0)" min="0" max={{item.disponible}} class="form-control text-right" id="disponible"  #agregar>
+              </div>
+            </div>           
+        </div>
+			</div>
+		</div>
+  </div>
+  
+</div>
+</div>

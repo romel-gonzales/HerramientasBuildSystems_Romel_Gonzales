@@ -1,0 +1,184 @@
+{
+  "productos" : [ {
+    "descripcion" : "aguacate",
+    "disponible" : "3",
+    "id" : "1",
+    "imagen" : "assets/img/aguacate.jpg",
+    "informacion" : "aguacate de granja",
+    "nombre" : "aguacate",
+    "precio" : "5.99"
+  }, {
+    "descripcion" : "ajo",
+    "disponible" : "10",
+    "id" : "2",
+    "imagen" : "assets/img/ajo.jpg",
+    "informacion" : "ajo",
+    "nombre" : "ajo",
+    "precio" : "3.50"
+  }, {
+    "descripcion" : "almendras",
+    "disponible" : "12",
+    "id" : "3",
+    "imagen" : "assets/img/almendras.jpg",
+    "informacion" : "almendras",
+    "nombre" : "almendras",
+    "precio" : "9.50"
+  }, {
+    "descripcion" : "arandanos",
+    "disponible" : "10",
+    "id" : "4",
+    "imagen" : "assets/img/arandanos.jpg",
+    "informacion" : "arandanos",
+    "nombre" : "arandanos",
+    "precio" : "3.00"
+  },{
+    "descripcion" : "brocoli",
+    "disponible" : "3",
+    "id" : "5",
+    "imagen" : "assets/img/brocoli.jpg",
+    "informacion" : "brocoli",
+    "nombre" : "brocoli",
+    "precio" : "2.99"
+  },{
+    "descripcion" : "calabaza",
+    "disponible" : "8",
+    "id" : "6",
+    "imagen" : "assets/img/calabaza.jpg",
+    "informacion" : "calabaza",
+    "nombre" : "calabaza",
+    "precio" : "3.99"
+  }, {
+    "descripcion" : "canela",
+    "disponible" : "16",
+    "id" : "7",
+    "imagen" : "assets/img/canela.jpg",
+    "informacion" : "canela",
+    "nombre" : "canela",
+    "precio" : "19.99"
+  }, {
+    "descripcion" : "cebolla",
+    "disponible" : "4",
+    "id" : "8",
+    "imagen" : "assets/img/cebolla.jpg",
+    "informacion" : "cebolla",
+    "nombre" : "cebolla",
+    "precio" : "9.99"
+  }, {
+    "descripcion" : "fresa",
+    "disponible" : "23",
+    "id" : "9",
+    "imagen" : "assets/img/fresa.jpg",
+    "informacion" : "fresa",
+    "nombre" : "fresa",
+    "precio" : "34.59"
+  }, {
+    "descripcion" : "kiwi",
+    "disponible" : "13",
+    "id" : "10",
+    "imagen" : "assets/img/kiwi.jpg",
+    "informacion" : "kiwi",
+    "nombre" : "kiwi",
+    "precio" : "2.90"
+  }, {
+    "descripcion" : "limon",
+    "disponible" : "8",
+    "id" : "11",
+    "imagen" : "assets/img/limon.jpg",
+    "informacion" : "limon",
+    "nombre" : "limon",
+    "precio" : "59.99"
+  }, {
+    "descripcion" : "lychee",
+    "disponible" : "2",
+    "id" : "12",
+    "imagen" : "assets/img/lychee.jpg",
+    "informacion" : "lychee",
+    "nombre" : "lychee",
+    "precio" : "11.50"
+  }, {
+    "descripcion" : "maiz",
+    "disponible" : "50",
+    "id" : "13",
+    "imagen" : "assets/img/maiz.jpg",
+    "informacion" : "maiz",
+    "nombre" : "maiz",
+    "precio" : "8.99"
+  }, {
+    "descripcion" : "manzana",
+    "disponible" : "64",
+    "id" : "14",
+    "imagen" : "assets/img/manzana.jpg",
+    "informacion" : "manzana",
+    "nombre" : "manzana",
+    "precio" : "6.99"
+  }, {
+    "descripcion" : "naranja",
+    "disponible" : "6",
+    "id" : "15",
+    "imagen" : "assets/img/naranja.jpg",
+    "informacion" : "naranja",
+    "nombre" : "naranja",
+    "precio" : "0.99"
+  }, {
+    "descripcion" : "papa",
+    "disponible" : "1",
+    "id" : "16",
+    "imagen" : "assets/img/papa.jpg",
+    "informacion" : "papa",
+    "nombre" : "papa",
+    "precio" : "0.50"
+  }, {
+    "descripcion" : "pasta",
+    "disponible" : "33",
+    "id" : "17",
+    "imagen" : "assets/img/pasta.jpg",
+    "informacion" : "pasta",
+    "nombre" : "pasta",
+    "precio" : "1.90"
+  }, {
+    "descripcion" : "pimienta",
+    "disponible" : "1",
+    "id" : "18",
+    "imagen" : "assets/img/pimienta.jpg",
+    "informacion" : "pimienta",
+    "nombre" : "pimienta",
+    "precio" : "0.20"
+  }, {
+    "descripcion" : "repollo",
+    "disponible" : "43",
+    "id" : "19",
+    "imagen" : "assets/img/repollo.jpg",
+    "informacion" : "repollo",
+    "nombre" : "repollo",
+    "precio" : "1.25"
+  }, {
+    "descripcion" : "tomate",
+    "disponible" : "50",
+    "id" : "20",
+    "imagen" : "assets/img/tomate.jpg",
+    "informacion" : "tomate",
+    "nombre" : "tomate",
+    "precio" : "1.00"
+  }, {
+    "descripcion" : "zanahoria",
+    "disponible" : "20",
+    "id" : "21",
+    "imagen" : "assets/img/zanahoria.jpg",
+    "informacion" : "zanahoria",
+    "nombre" : "zanahoria",
+    "precio" : "0.99"
+  }],
+  "usuarios" : [ {
+    "clave" : "hola",
+    "usuario" : "romel@gmail.com"
+  }, {
+    "clave" : "hola",
+    "usuario" : "jose@gmail.com"
+  },{
+    "clave" : "hola",
+    "usuario" : "carlos@gmail.com"
+  },{
+    "clave" : "hola",
+    "usuario" : "jorge@gmail.com"
+  } ]
+}

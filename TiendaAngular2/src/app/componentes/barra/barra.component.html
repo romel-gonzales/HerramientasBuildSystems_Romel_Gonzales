@@ -1,0 +1,15 @@
+
+<div class="barra-superior top-barra"> 
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a [routerLink]="['/tienda']" class="navbar-brand text-shadow"><i class="material-icons"shopping_cart></i><p>La Bodega</p></a>
+      </div>
+      <ul class="nav navbar-nav navbar-right ancho">
+        <li><a [routerLink]="['/tienda']" class="text-shadow active" [ngClass]="{active : (this.url == 'tienda')}"><i class="material-icons">apps</i></a></li>
+        <li><a [routerLink]="['/carrito']" class="text-shadow active" [ngClass]="{active : (this.url == 'carrito')}"><i class="material-icons">shopping_cart</i><span *ngIf="this.carritoService.contadorCarrito() > 0" class="item-counter">{{this.carritoService.contadorCarrito()}}</span></a></li>
+        <li class="cursor "><a (click)="cerrarSesion()" class="text-shadow active"><i class="material-icons">exit_to_app</i></a></li>
+      </ul>
+    </div>
+  </nav>
+</div>

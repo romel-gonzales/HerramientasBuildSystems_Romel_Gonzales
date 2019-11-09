@@ -1,0 +1,21 @@
+
+.top-barra{
+    border-top-style: solid;
+    border-top-width: 20px;
+}
+
+.barra-superior {
+    background: #802314;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.line {
+    border-style: solid;
+}
+
+.ancho {
+    width: 100px;
+    height: 50px;
+    float: right;
+}

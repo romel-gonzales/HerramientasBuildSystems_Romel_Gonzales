@@ -1,0 +1,195 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash|Poppins');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+.contenedor-principal {
+    background-image: url('./assets/img/main-fondo.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 0;
+    overflow: auto;
+}
+
+.container {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    top: 3%;
+    background-color: #fff
+}
+
+#introduction {
+    background-color: #fff;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.card .card-image img {
+	height: 17rem;
+	padding: .5rem;
+}
+
+.card .card-content {
+    padding: 0 24px;
+}
+
+.btn, .btn-large, .btn-flat {
+    padding: 0 .5rem;
+}
+
+.card .card-action:last-child {
+    padding-bottom: 3.5rem;
+}
+
+.titulo div div {
+	height: 5rem;
+}
+
+.titulo div div h5 {
+    margin-top: 1.6rem;
+}
+
+.input-field input[type="search"] {
+    padding-left: 45px;
+}
+
+.product-image {
+    margin-top: 10px;
+}
+
+.product-quantity {
+    float: right;
+    width: 30%;
+  }
+
+.line {
+    border:1px solid;
+}
+
+.catalogo {
+    height: 700px;
+    overflow: scroll;
+}
+
+.box {
+	box-shadow: 0 0 2px 0 lightgray;
+	background: white;
+	border-radius: 5px;
+}
+
+.box.carrito {
+	padding:20px;
+}
+.box.carrito {
+	padding:20px;
+}
+.box .img{
+  position: relative;
+}
+.box h4 {
+	position: absolute;
+	bottom: 0;
+	left: 10px;
+	right: 10px;
+	background: #b46314b3;
+	padding: 4px;
+	color: white;
+}
+.box h4.badge {
+	position: absolute;
+	bottom: 0;
+	left: 10px;
+	right: 10px;
+	background: #b46314b3;
+	padding: 4px;
+	color: white;
+}
+.box h4.badge {
+	position: absolute;
+	top: 0;
+	background: #b46314b3;
+	color: white;
+	border-radius: 0;
+	bottom: auto;
+	left: 0;
+	right: auto;
+	padding-left: 12px;
+	padding-right: 12px;
+}
+.box h4.badge {
+	position: absolute;
+	top: 0;
+	background: #b46314b3;
+	color: white;
+	border-radius: 0;
+	bottom: auto;
+	left: 0;
+	right: auto;
+	padding-left: 12px;
+	padding-right: 12px;
+}
+
+.box h4.badge b {
+	position: relative;
+	top: -6px;
+}
+
+.box.footer{
+  background-color: white;
+  text-align: center;
+}
+
+.box.footer a:hover{
+ font-size: 102%;
+  text-align: center;
+  -webkit-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+.flex{
+  display:flex;
+  flex-wrap: wrap;
+}
+.flex img{
+    display: flex;
+    flex: 1;
+}
+.box .titulo {
+	border-bottom: solid 2px lightgray;
+	margin-bottom: 15px;
+	padding-bottom: 10px;
+}
+
+.badge.carrito {
+	position: absolute;
+	top: 20px;
+	right: 15px;
+	background: #b46314b3;
+}
+
+li.list-group-item {
+	margin:0;
+}
+li.list-group-item img{
+  height: auto;
+  width: 100%;
+}
+li.list-group-item .footer {
+	display: table;
+	width: 100%;
+	padding: 0px 20px;
+	font-weight: 600;
+	border-top: solid 1px lightgray;
+}
+
+.informacion {
+	background: #ededed;
+	padding: 6px;
+	border-top: solid lightgray 1px;
+	display: table;
+	width: 100%;
+}

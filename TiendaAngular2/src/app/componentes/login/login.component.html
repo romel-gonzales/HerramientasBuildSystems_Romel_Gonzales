@@ -1,0 +1,28 @@
+<div class="loginContainer">
+  <div class="col-sm-4 form-container animated fadeIn slow text-white">
+    <form [formGroup]="loginForm" (ngSubmit)="validarLogin()">
+      <h4 class="text-center">Iniciar Sesion</h4>
+
+      <div class="form-group">
+        <label for="email" >Correo Electronico</label>
+        <input formControlName="email" type="email" id="email" 
+          class="form-control"
+          pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?">
+        <label *ngIf="!loginForm.controls['email'].valid" class="text-red">Favor ingresar un correo electronico</label>
+      </div>
+
+      <div class="form-group">
+        <label for="password" >Contraseña</label>
+        <input formControlName="password" type="password" id="password" class="form-control">
+        <label *ngIf="!loginForm.controls['password'].valid">Favor ingresar clave</label>
+      </div>
+
+      <div class="row text-center">
+      <div class="mensaje">{{mensaje}}</div>  
+            <div class="col-sm-10"> 
+              <button type="submit" class="btn btn-success" [disabled]="!loginForm.valid">Ingresar</button>
+            </div>  
+      </div>
+    </form>
+  </div>
+</div>  

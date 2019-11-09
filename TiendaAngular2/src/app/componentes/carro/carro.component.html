@@ -1,0 +1,64 @@
+<div class="contenedor-principal">
+<div class="container">
+    <app-barra></app-barra> 
+  <div class="box carrito catalogo">
+    <h2 class="titulo animated fadeIn slow" [ngStyle]="{display:inline-block}">{{titulo}}</h2>
+    <div *ngIf="this.carritoService.contadorCarrito()">
+    <div class="row">
+      <ul class="producto list-group col-sm-7 col-xs-12 no-padding animated fadeIn slow">
+        <li class="list-group-item flex col-xs-12 no-padding" *ngFor="let item of listaCarrito" [ngStyle]="{background:'#ededed'}">
+          <div class="col-xs-12 no-padding">
+           <div class="row">
+            <div class="col-sm-6 col-xs-12">  
+            <div class="img img-flex no-padding pull-left">
+              <a [routerLink]="['/tienda/detalle', item.id]"><img src="{{item.imagen}}" alt="{{item.description}}" class="img-responsive no-padding card-img-top"></a>              
+            </div>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+            <div class="informacion">
+              <span class="pull-right">
+                <i class="material-icons cursor" (click)="eliminarProducto(item.id, null)" >highlight_off</i>
+              </span>
+              <h5 class="text-left">{{item.descripcion}}</h5>
+              <p><small><b>Precio: </b>{{item.precio | currency : 'USD' : 1-0-2}}</small></p>
+              <p><small><b>Cantidad: </b>{{item.cantidad}}</small></p>
+              <div class="input-group">
+                <span class="input-group-btn"> 
+                  <button class="btn btn-warning" type="button" (click)="eliminarProducto(item.id, eliminar.value)">Eliminar</button>                  
+                </span>
+                <input type="number" [value]="0" min="0" max={{item.Cantidad}} class="form-control text-right" id="cantidad" #eliminar>                
+              </div>
+            </div>
+
+            <div class="list-group-item footer">
+              <div class="no-padding col-xs-6 text-right">
+                <h5><b>Subtotal: </b></h5>
+              </div>
+              <div class="no-padding col-xs-6 text-right">
+                <h5>{{this.carritoService.subtotal(item.precio, item.cantidad) | currency : 'USD' : 1-0-2}}</h5>
+              </div>
+            </div>  
+          </div>
+          </div>
+            
+          </div>
+        </li>
+      </ul>
+      <div class="col-sm-4 col-xs-12 animated fadeIn slow">
+        <div>
+          <h2 class="text-right"><button class="btn btn-danger btn-sm" type="button" (click)="this.vaciarCarrito()"><i class="material-icons" [ngStyle]="{'line-height' : '11px', 'font-size': '11px', 'position' : 'relative', 'top': '3px'}">delete</i>VaciarCarrito</button></h2>
+          <h2 class="text-right">Total a pagar:</h2>
+          <h3 class="text-right">{{this.total() | currency : 'USD' : 1-0-2}}</h3>
+          <p class="pull-right">
+            <button class="btn btn-success" type="button" (click)="pagarCarrito()"><i class="material-icons">credit_card</i>Pagar</button>            
+          </p>
+          </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div *ngIf="!this.carritoService.contadorCarrito()">
+    <p>No ha agregado productos al carrito de compras. Lo invitamos a dar un paseo por nuestra <a [routerLink]="['tienda']">Tienda Virtual</a></p>
+  </div>
+</div>
+</div>

@@ -1,0 +1,36 @@
+
+
+******************** Proyecto TiendaAngular2  ***************************
+
+1.- Importar la carpeta del proyecto en Visual Studio Code
+
+1.- Instalar dependencias del Proyecto
+	npm install
+	
+2.- credenciales de acceso
+	usuario: romel@gmail.com
+	clave: hola
+
+3.- La base de datos del proyecto ya se encuentra en linea en Google Firebase	
+
+4.- Arrancar el proyecto de la siguiente manera
+	a.- desde la consola de comandos ejecutar ng serve
+	b.- el link de la aplicacion es http://localhost:4200
+	
+	
+******************** Proyecto TiendaReactJS  ***************************
+	
+1.- Importar la carpeta del proyecto en Visual Studio Code
+
+1.- Instalar dependencias del Proyecto
+	npm install
+	
+2.- credenciales de acceso
+	usuario: romel@gmail.com
+	clave: hola	
+	
+3.- La base de datos del proyecto ya se encuentra en linea en Google Firebase
+
+4.- Arrancar el proyecto de la siguiente manera
+	a.- desde la consola de comandos ejecutar npm start
+	b.- el link de la aplicacion es http://localhost:8080	
